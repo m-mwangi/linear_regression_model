@@ -73,11 +73,13 @@ def predict(input_data: PredictionInput):
     
     # Make a prediction using the Random Forest model
     predicted_charge = rf_model.predict(processed_input)
+
     
     # Inverse standardize the 'charges' prediction to get the original scale
     try:
         predicted_charge_original = scaler.inverse_transform(predicted_charge.reshape(-1, 1))
-        return {"predicted_insurance_charges": predicted_charge_original[0][0]}
+        predicted_charge_value = round(predicted_charge_original[0][0], 2)
+        return {"predicted_insurance_charges": predicted_charge_value}
     except Exception as e:
         return {"error": f"Error during inverse transformation: {e}"}
 
