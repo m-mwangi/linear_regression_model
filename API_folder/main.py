@@ -3,6 +3,7 @@ from pydantic import BaseModel, Field
 from fastapi.middleware.cors import CORSMiddleware
 import joblib
 import pandas as pd
+import os
 
 # Set up relative paths for the model and scaler
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Directory of the current script
