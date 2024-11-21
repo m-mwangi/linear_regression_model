@@ -4,9 +4,14 @@ from fastapi.middleware.cors import CORSMiddleware
 import joblib
 import pandas as pd
 
+# Set up relative paths for the model and scaler
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Directory of the current script
+rf_model_path = os.path.join(BASE_DIR, "best_random_forest_model.pkl")
+scaler_path = os.path.join(BASE_DIR, "charges_scaler.pkl")
+
 # Load the trained Random Forest model and the scaler used for 'charges'
-rf_model = joblib.load("C:\\Users\\mario\\Downloads\\best_random_forest_model.pkl")
-scaler = joblib.load("C:\\Users\\mario\\Downloads\\charges_scaler.pkl")
+rf_model = joblib.load(rf_model_path)
+scaler = joblib.load(scaler_path)
 
 # Define a function to preprocess the input data
 def preprocess_input(input_data: pd.DataFrame) -> pd.DataFrame:
