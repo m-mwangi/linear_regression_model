@@ -35,5 +35,33 @@ Frontend - Flutter.
 Model - Scikit learn library from python.
 
 
+## Running the Mobile App:
+### Prerequisites:
+Ensure you have the following installed on your machine:
+ - Flutter SDK (2.x or later).
+ - Android Studio or Visual Studio Code.
+ - An Android or iOS emulator or a physical device.
+
+
+### Step by Step instructions:
+Clone the Repository:
+
+  git clone https://github.com/m-mwangi/linear_regression_model.git
+
+Navigate to the Project Directory:
+
+ cd insurance_prediction_app
+ 
+Install Dependencies:
+
+ flutter pub get
+
+Run the App:
+
+ flutter run
+ 
+This will launch the app on the emulator or device.
+
+
 
 
