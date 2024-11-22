@@ -90,6 +90,4 @@ For the POST, be sure to include '/predict' on the endpoint link https://health-
 
 ## Demo Video:
 
-
-
-
+https://youtu.be/xpwHgIhSwBk
