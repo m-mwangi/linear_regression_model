@@ -79,6 +79,13 @@ When you run the app, on the screen you will have different input sections for:
 After inputting these values, You will click on predict and the output will be the predicted charges in US Dollars.
 
 
+
+## Demo Video:
+
+https://youtu.be/xpwHgIhSwBk
+
+
+
 ## API Endpoint Link:
 https://health-insurance-prediction-z4hv.onrender.com
 
@@ -86,8 +93,3 @@ For the POST, be sure to include '/predict' on the endpoint link https://health-
 
 
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/7f23fb0f-a321-486f-85ac-1a58761a5a27">
-
-
-## Demo Video:
-
-https://youtu.be/xpwHgIhSwBk
