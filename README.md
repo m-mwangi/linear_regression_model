@@ -87,7 +87,9 @@ For the POST, be sure to include '/predict' on the endpoint link https://health-
 
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/7f23fb0f-a321-486f-85ac-1a58761a5a27">
 
-<img width="959" alt="image" src="https://github.com/user-attachments/assets/e6b9e982-fead-4627-974d-a6d8c0916f40">
+
+## Demo Video:
+
 
 
 
