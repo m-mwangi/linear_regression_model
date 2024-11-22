@@ -51,15 +51,18 @@ Clone the Repository:
     
 Navigate to the Project Directory:
 
- cd insurance_prediction_app
+    cd insurance_prediction_app
+   
  
 Install Dependencies:
 
- flutter pub get
+    flutter pub get
+    
 
 Run the App:
 
- flutter run
+   flutter run
+   
  
 This will launch the app on the emulator or device.
 
