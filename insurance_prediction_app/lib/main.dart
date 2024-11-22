@@ -65,11 +65,15 @@ class _PredictionPageState extends State<PredictionPage> {
     };
 
     try {
-      final response = await http.post(
+      final response = await http
+          .post(
         Uri.parse(apiUrl),
         headers: {"Content-Type": "application/json"},
         body: json.encode(data),
-      );
+      )
+          .timeout(const Duration(seconds: 10), onTimeout: () {
+        throw "The connection has timed out, please try again later.";
+      });
 
       if (response.statusCode == 200) {
         final Map<String, dynamic> responseData = json.decode(response.body);
@@ -83,8 +87,9 @@ class _PredictionPageState extends State<PredictionPage> {
       }
     } catch (error) {
       setState(() {
-        result = "An error occurred: $error";
+        result = "An error occurred: ${error.toString()}";
       });
+      print("Error: $error");
     }
   }
 
