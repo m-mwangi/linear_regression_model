@@ -45,9 +45,10 @@ Ensure you have the following installed on your machine:
 
 ### Step by Step instructions:
 Clone the Repository:
+    
+    git clone https://github.com/m-mwangi/linear_regression_model.git
 
-  git clone https://github.com/m-mwangi/linear_regression_model.git
-
+    
 Navigate to the Project Directory:
 
  cd insurance_prediction_app
