@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'dart:convert'; // For JSON encoding/decoding
+import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 void main() {
@@ -23,9 +23,9 @@ class MyApp extends StatelessWidget {
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             foregroundColor: Colors.white,
-            backgroundColor: Colors.teal, // Button background color
+            backgroundColor: Colors.teal,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(30), // Rounded corners
+              borderRadius: BorderRadius.circular(30),
             ),
             padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 16),
           ),
@@ -135,15 +135,15 @@ class _PredictionPageState extends State<PredictionPage> {
       padding: const EdgeInsets.symmetric(vertical: 8.0),
       child: TextField(
         controller: controller,
-        style: const TextStyle(color: Colors.black87), // Text color for input
+        style: const TextStyle(color: Colors.black87),
         decoration: InputDecoration(
           labelText: label,
           hintText: hint,
-          hintStyle: const TextStyle(color: Colors.grey), // Hint text color
+          hintStyle: const TextStyle(color: Colors.grey),
           filled: true,
-          fillColor: Colors.teal[50], // Light background color for text field
+          fillColor: Colors.teal[50],
           border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10), // Rounded corners
+            borderRadius: BorderRadius.circular(10),
             borderSide: const BorderSide(color: Colors.teal),
           ),
           focusedBorder: OutlineInputBorder(
